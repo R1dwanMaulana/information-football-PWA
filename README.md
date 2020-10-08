@@ -1,2 +1,2 @@
 ## How To Install Project
-`npm install`to install dependencies
+- [x] `npm install`to install dependencies
