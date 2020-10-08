@@ -1,0 +1,99 @@
+.hijau {
+	color: #34bf54;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.abu2 {
+	color: #b0b0a5;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.merah {
+	color: #ab2e2e;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.rounded {
+
+	border-radius: 8px !important;
+	background-color: rgb(245, 245, 245) !important;
+	margin-top: 50px;
+	margin-bottom: 100px;
+
+}
+.standings img {
+	max-height: 180px;
+}
+
+.bulatx {
+	background-color: rgb(15, 22, 104);
+	color: white;
+	border-radius: 8px !important;
+}
+
+.cmp-name {
+	color: white;
+}
+
+.putih {
+	color: white;
+}
+
+.info {
+	background-color: rgb(22, 13, 104);
+	font-size: x-large;
+}
+
+.logo {
+	max-width: 170px;
+	padding-top: 30px;
+	margin: auto;
+}
+
+.detail {
+	border-radius: 8px !important;
+	background-color: #e5e7e6 !important;
+}
+
+.card-image {
+	margin-bottom: 25px;
+}
+
+.bulx{
+	border-radius: 8px;
+	background-color: #4486a5;
+}
+
+#simpan {
+
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 30px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+#body-content {
+	margin-top: 80px;
+}
+
+#logo-container{
+	font-size: 22px;
+}
+
+.saved {
+	background-color: #e5e7e6 !important;
+	border-radius: 8px !important;
+}
+
+table {
+	empty-cells: hide !important;
+}
+
+li .fa {
+	margin-right: 3px !important;
+}
