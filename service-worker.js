@@ -61,7 +61,7 @@ workbox.precaching.precacheAndRoute(
 
 workbox.routing.registerRoute(
   new RegExp('https://api.football-data.org/v2/'),
-  workbox.strategies.netWorkFirst({
+  workbox.strategies.networkFirst({
     cacheName: 'fetch',
   })
 );
