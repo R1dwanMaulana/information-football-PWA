@@ -1,4 +1,4 @@
-import { getAllTeam, getStandingsIng, getStandingsJer, getStandingsPrc, getStandingsSpn, removePrelaod } from './api.js';
+import { getAllTeam, getStandingsIng, getStandingsJer, getStandingsPrc, getStandingsSpn,getStandingsChmps removePrelaod } from './api.js';
 import {showSavTeam} from './show'
 
 // Activate sidebar nav
@@ -15,7 +15,7 @@ let idteam3 = Number(window.location.hash.substr(9))
 if (page === '') {
   page = 'dashboard';
 } 
-else if ( page === "bundesliga" || page === "ligue1" || page === "premier" || page === "primera" ||
+else if ( page === "bundesliga" || page === "ligue1" || page === "premier" || page === "primera" || page === "uefa" ||
 idteam3 ){
   page = "team"
 }
@@ -48,6 +48,8 @@ console.log(page)
           getStandingsSpn()
         } else if ( page === "premier"){
           getStandingsIng()
+        } else if ( page === "uefa"){
+          getStandingsChmps()
         } else if ( idteam3 ){
           getAllTeam(idteam3)
         } else if (page === 'saved') {
