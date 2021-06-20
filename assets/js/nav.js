@@ -1,4 +1,4 @@
-import { getAllTeam, getStandingsIng, getStandingsJer, getStandingsPrc, getStandingsSpn,getStandingsChmps removePrelaod } from './api.js';
+import { getAllTeam, getStandingsIng, getStandingsJer, getStandingsPrc, getStandingsSpn,getStandingsChmps, removePrelaod } from './api.js';
 import {showSavTeam} from './show'
 
 // Activate sidebar nav
