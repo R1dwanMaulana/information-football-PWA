@@ -6,6 +6,7 @@ const Endpoint_Ing = `${BASE_URL}competitions/2021/standings`;
 const Endpoint_Jer = `${BASE_URL}competitions/2002/standings`;
 const Endpoint_Spn = `${BASE_URL}competitions/2014/standings`;
 const Endpoint_Prc = `${BASE_URL}competitions/2015/standings`;
+const Endpoint_Chmps = `${BASE_URL}competitions/2001/standings`;
 
  
 function preload(){
@@ -186,6 +187,32 @@ function getStandingsJer() {
 		
 		});
 }
+function getStandingsChmps() {
+	preload()
+	if ('caches' in window) {
+		caches.match('https://api.football-data.org/v2/competitions/2001/standings').then(function (response) {
+			if (response) {
+				response.json().then(function (data) {
+					console.log('Competition Data: ' + data);
+					removePrelaod()
+					showStandingsAll(data)
+				});
+			}
+		});
+	}
+
+	fetchAPI('https://api.football-data.org/v2/competitions/2001/standings')
+		.then((data) => {
+			if(data) {
+				removePrelaod()
+			}
+			showStandingsAll(data)
+		})
+		.catch((error) => {
+			console.log(error);
+		
+		});
+}
 
 	// ketikaa team dari standings di pencet maka jalankan fungsi  ini
 	// nanti prameter id ambil dari href nya juga...
@@ -216,4 +243,4 @@ function getAllTeam(id) {
 		});
 }
 
-export { getAllTeam, getStandingsIng, getStandingsPrc, getStandingsSpn, getStandingsJer, preload, removePrelaod}
+export { getAllTeam, getStandingsIng, getStandingsPrc, getStandingsSpn, getStandingsJer, getStandingsChmps, preload, removePrelaod}
