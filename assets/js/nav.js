@@ -49,7 +49,7 @@ console.log(page)
         } else if ( page === "premier"){
           getStandingsIng()
         } else if ( page === "uefa"){
-          getStandingsChmps()
+          getStandingsChmps(
         } else if ( idteam3 ){
           getAllTeam(idteam3)
         } else if (page === 'saved') {
